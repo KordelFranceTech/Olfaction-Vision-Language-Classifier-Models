@@ -2,9 +2,9 @@
 
 
 ## Model Details
-- **Model Name:** `Scentience OVLE Large v1`
+- **Model Name:** `Scentience OVLC v1`
 - **Developed by:** Kordel K. France
-- **Date:** September 2025
+- **Date:** November 2025
 - **Architecture:**
   - **Olfaction encoder:** 138-sensor embedding
   - **Vision encoder:** CLIP-based
