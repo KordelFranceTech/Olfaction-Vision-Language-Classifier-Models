@@ -41,7 +41,7 @@ base_model: Scentience-OVL-Classifiers-Base
 
 This repository is a foundational series of multimodal joint classifier models trained on olfaction, vision, and language data.
 It is meant as a quick start on loading the olfaction-vision-language models and getting the probability/logits of the presence of observed chemical compounds in a visual scene given a set of aroma descriptors.
-For example, given an input image and a set of observed aromas (fruity, musky, etc), what is the probability that acetone is present?
+For example, given an input image and a set of observed aromas (fruity, musky, etc), these models can give the probability that acetone is present.
 
 Based on the original series of [embeddings models here](https://huggingface.co/kordelfrance/Olfaction-Vision-Language-Embeddings), these models are built specifically for prototyping and exploratory tasks within AR/VR, robotics, and embodied artificial intelligence.
 Analogous to how CLIP and SigLIP embeddings give vision-language relationships, our embeddings models here give olfaction-vision-language (OVL) relationships.
@@ -50,7 +50,7 @@ Whether these models are used for better vision-scent navigation with drones, tr
 We especially hope these models encourage the community to contribute to building standardized datasets and evaluation protocols for olfaction-vision-language learning.
 
 ## Models
-We offer four olfaction-vision-language (OVL) classifier models with this repository:
+We offer two olfaction-vision-language (OVL) classifier models with this repository:
  - (1) `ovlc-gat`: The OVL base model built around a graph-attention network. This model is optimal for online tasks where accuracy is paramount and inference time is not as critical.
  - (2) `ovlc-base`: The original OVL base model optimized for faster inference and edge-based robotics. This model is optimized for export to common frameworks that run on Android, iOS, Rust, and others.
 
