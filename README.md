@@ -80,7 +80,7 @@ Olfaction-Vision-Language-Classifier-Models/
 If you use any of these models, please cite:
 ```
     @misc{france2025ovlclassifiers,
-        title = {Scentience-OVLE-v1: Joint Olfaction-Vision-Language Classifiers},
+        title = {Scentience-OVLC-v1: Joint Olfaction-Vision-Language Classifiers},
         author = {Kordel Kade France},
         year = {2025},
         howpublished = {Hugging Face},

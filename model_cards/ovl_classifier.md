@@ -1,4 +1,4 @@
-# Model Card: Scentience-OVLE-Large-v1
+# Model Card: Scentience-OVLEC-v1
 
 
 ## Model Details
@@ -12,7 +12,8 @@
   - **Fusion strategy:** Joint embedding space via multimodal contrastive training
   - **Parameter Count (Base):** 29.9M (without CLIP), 181.2M (with CLIP)
   - **Parameter Count (GAT):** 143.2M (without CLIP), 294.5M (with CLIP)
-  - **Embedding Dimension:** 2048
+  - **Embedding Dimension:** 512
+  - **Output Dimension:** 1 (single probability/logit)
 - **License:** MIT
 - **Contact:** kordel@scentience.ai, kordel.france@utdallas.edu
 
