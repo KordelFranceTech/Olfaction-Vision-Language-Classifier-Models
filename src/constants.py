@@ -13,11 +13,7 @@ EMBED_DIM: int = 512
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Paths to models
-OVLE_SMALL_BASE_PATH: str = "./model/ovle-small/base/gnn.pth"
-ENCODER_SMALL_BASE_PATH: str = "./model/ovle-small/base/olf_encoder.pth"
-OVLE_LARGE_BASE_PATH: str = "./model/ovle-large/base/gnn.pth"
-ENCODER_LARGE_BASE_PATH: str = "./model/ovle-large/base/olf_encoder.pth"
-OVLE_SMALL_GRAPH_PATH: str = "./model/ovle-small/graph/gat_gnn.pth"
-ENCODER_SMALL_GRAPH_PATH: str = "./model/ovle-small/graph/gat_olf_encoder.pth"
-OVLE_LARGE_GRAPH_PATH: str = "./model/ovle-large/graph/gat_gnn.pth"
-ENCODER_LARGE_GRAPH_PATH: str = "./model/ovle-large/graph/gat_olf_encoder.pth"
+OVLE_SMALL_BASE_PATH: str = f"./model/ovlc/base/gnn_{EMBED_DIM}_c.pt"
+ENCODER_SMALL_BASE_PATH: str = f"./model/ovlc/base/olf_encoder_{EMBED_DIM}_c.pt"
+OVLE_LARGE_GRAPH_PATH: str = f"./model/ovlc/graph/gat_gnn_{EMBED_DIM}_c.pt"
+ENCODER_LARGE_GRAPH_PATH: str = f"./model/ovlc/graph/gat_olf_encoder_{EMBED_DIM}_c.pt"

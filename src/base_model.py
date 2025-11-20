@@ -25,9 +25,9 @@ def run_inference(vision_lang_encoder, olf_encoder, graph_model, image, olf_vec)
 
         nodes = torch.cat([vision_embed, olf_embed], dim=0)
         edge_index = torch.cartesian_prod(torch.arange(nodes.size(0)), torch.arange(nodes.size(0))).T.to(constants.DEVICE)
-        embeds_final = graph_model(nodes, edge_index)
+        logits = graph_model(nodes, edge_index)
 
-    return embeds_final
+    return logits
 
 
 def load_model():

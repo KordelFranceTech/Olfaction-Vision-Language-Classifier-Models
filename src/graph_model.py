@@ -22,9 +22,9 @@ def run_inference(vision_lang_encoder, olf_encoder, graph_model, image, olf_vec)
     with torch.no_grad():
         vision_embed = vision_lang_encoder.get_image_features(pixel_values=image_tensor)
         olf_embed = olf_encoder(olf_tensor)
-        embeds_final = graph_model(vision_embed, olf_embed).squeeze()
+        logits = graph_model(vision_embed, olf_embed).squeeze()
 
-    return embeds_final
+    return logits
 
 
 def load_model():

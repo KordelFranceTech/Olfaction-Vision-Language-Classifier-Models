@@ -40,14 +40,17 @@ base_model: Scentience-OVL-Classifiers-Base
 ## Description
 
 This repository is a foundational series of multimodal joint classifier models trained on olfaction, vision, and language data.
-These models are built specifically for prototyping and exploratory tasks within AR/VR, robotics, and embodied artificial intelligence.
+It is meant as a quick start on loading the olfaction-vision-language models and getting the probability/logits of the presence of observed chemical compounds in a visual scene given a set of aroma descriptors.
+For example, given an input image and a set of observed aromas (fruity, musky, etc), what is the probability that acetone is present?
+
+Based on the original series of [embeddings models here](https://huggingface.co/kordelfrance/Olfaction-Vision-Language-Embeddings), these models are built specifically for prototyping and exploratory tasks within AR/VR, robotics, and embodied artificial intelligence.
 Analogous to how CLIP and SigLIP embeddings give vision-language relationships, our embeddings models here give olfaction-vision-language (OVL) relationships.
 
 Whether these models are used for better vision-scent navigation with drones, triangulating the source of an odor in an image, extracting aromas from a scene, or augmenting a VR experience with scent, we hope their release will catalyze further research in olfaction, especially olfactory robotics.
 We especially hope these models encourage the community to contribute to building standardized datasets and evaluation protocols for olfaction-vision-language learning.
 
 ## Models
-We offer four olfaction-vision-language (OVL) embedding models with this repository:
+We offer four olfaction-vision-language (OVL) classifier models with this repository:
  - (1) `ovlc-gat`: The OVL base model built around a graph-attention network. This model is optimal for online tasks where accuracy is paramount and inference time is not as critical.
  - (2) `ovlc-base`: The original OVL base model optimized for faster inference and edge-based robotics. This model is optimized for export to common frameworks that run on Android, iOS, Rust, and others.
 
@@ -55,12 +58,13 @@ We offer four olfaction-vision-language (OVL) embedding models with this reposit
 A sample dataset is included, but the full datasets are linked in the `Datasets` pane of this repo.
 Training code for replicating full construction of all models will be released soon.
 
+Please refer to original series of [embeddings models here](https://huggingface.co/kordelfrance/Olfaction-Vision-Language-Embeddings) for more information.
 
 
 ## Directory Structure
 
 ```text
-Olfaction-Vision-Language-Embeddings-Models/
+Olfaction-Vision-Language-Classifier-Models/
 ├── data/                     # Sample training dataset
 ├── requirements.txt          # Python dependencies
 ├── model/                    # Classifier models
