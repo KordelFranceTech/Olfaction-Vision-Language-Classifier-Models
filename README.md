@@ -29,9 +29,9 @@ base_model: Scentience-OVL-Classifiers-Base
 
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
-[![Colab](https://img.shields.io/badge/Run%20in-Colab-yellow?logo=google-colab)](https://colab.research.google.com/drive/1H5OSeO43YfhAT9MqcJKaaSknFYhjimvg?usp=sharing)
+[![Colab](https://img.shields.io/badge/Run%20in-Colab-yellow?logo=google-colab)](https://colab.research.google.com/drive/1x6CfAvUUlS1gabNJoHqEQU-HyAy6yHoE?usp=sharing)
 [![Paper](https://img.shields.io/badge/Research-Paper-red)](https://arxiv.org/abs/2506.00398)
-[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/kordelfrance/Olfaction-Vision-Language-Embeddings)
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/kordelfrance/olfaction-vision-language-classifiers)
 
 </div>
 
@@ -79,12 +79,12 @@ Olfaction-Vision-Language-Classifier-Models/
 ## Citation
 If you use any of these models, please cite:
 ```
-    @misc{france2025ovlembeddings,
-        title = {Scentience-OVLE-v1: Joint Olfaction-Vision-Language Embeddings},
+    @misc{france2025ovlclassifiers,
+        title = {Scentience-OVLE-v1: Joint Olfaction-Vision-Language Classifiers},
         author = {Kordel Kade France},
         year = {2025},
         howpublished = {Hugging Face},
-        url = {https://huggingface.co/kordelfrance/Olfaction-Vision-Language-Embeddings}
+        url = {https://huggingface.co/kordelfrance/Olfaction-Vision-Language-Classifiers}
     }
 ```
 
